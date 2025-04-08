@@ -19,8 +19,9 @@ engine = create_engine(db_url, echo=False)
 Session = sessionmaker(bind=engine)
 
 # cria o banco se ele não existir 
-if not database_exists(engine.url):
-    create_database(engine.url) 
+#if not database_exists(engine.url):
+#    create_database(engine.url) 
+create_database(engine.url) 
 
 # cria as tabelas do banco, caso não existam
 EntityBase.metadata.create_all(engine)
