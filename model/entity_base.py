@@ -1,9 +1,9 @@
-from sqlalchemy.ext.declarative import as_declarative, declarative_base, declared_attr
-from sqlalchemy import Column, Integer
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import scoped_session, sessionmaker
+
+# Configuração da sessão do SQLAlchemy
+db_session = scoped_session(sessionmaker())
 
 Base = declarative_base()
 
-class EntityBase(Base):
-    __abstract__ = True
-    id = Column(Integer, autoincrement=True, primary_key=True)
-
+Base.query = db_session.query_property()
