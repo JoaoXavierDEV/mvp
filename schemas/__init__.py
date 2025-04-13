@@ -4,3 +4,5 @@
 #                             apresenta_produto, apresenta_produtos
 from schemas.error import ErrorSchema
 from schemas.evento import *
+from schemas.inscricao import *
+from schemas.pessoa import *

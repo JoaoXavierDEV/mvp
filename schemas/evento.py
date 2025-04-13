@@ -16,12 +16,6 @@ class EventoSchema(BaseModel):
     data: datetime = datetime.now() + timedelta(weeks=5)
     total_vagas: int = 50
 
-    # def __init__(self, evento: Evento):
-    #     self.nome = evento.nome
-    #     self.descricao = evento.descricao
-    #     self.local = evento.local
-    #     self.data = evento.data
-    #     self.total_vagas = evento.vagas
 
 
 class EventoViewSchema(BaseModel):
@@ -51,6 +45,7 @@ def listar_eventos(eventos: List[Evento]):
     """
     return [
         {
+            "id": evento.id,
             "nome": evento.nome,
             "descricao": evento.descricao,
             "local": evento.local,

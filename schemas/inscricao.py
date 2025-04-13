@@ -8,14 +8,10 @@ from datetime import datetime
 class InscricaoSchema(BaseModel):
     """ Define como um nova inscrição a ser inserido deve ser representado
     """
-    nome: str
-    data: Optional[datetime]
-    evento_id: int
-    email: str
-# Permite que o Pydantic converta objetos ORM (como os retornados pelo SQLAlchemy) em schemas Pydantic.
-    #class Config:
-    #    orm_mode = True
-
+    nome: str = "André"
+    evento: int = 2
+    email: str = "andre@outlook"
+    dataNascimento: Optional[datetime] = datetime.now()
 
 class InscricaoViewSchema(BaseModel):
     """ Define como uma inscrição será retornado
@@ -35,5 +31,4 @@ def exibir_incricao(inscricao: InscricaoDTO, evento: Evento):
         "email": inscricao.email,
         "evento": inscricao.evento,
         "local": evento.local,
-
     }

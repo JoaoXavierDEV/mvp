@@ -11,7 +11,7 @@ class Pessoa(Base):
     dataNascimento = Column(DateTime, nullable=True)
     inscricoes = relationship('Inscricao', back_populates='pessoa', cascade='all, delete-orphan')
 
-    def __init__(self, nome:str, data:Union[DateTime, None] = None):
+    def __init__(self, nome:str, data: DateTime):
         self.nome = nome
-        self.data = data
+        self.dataNascimento = data
 
