@@ -105,11 +105,7 @@ def obterTodosOsEventos():
     except Exception as err:
         return {"error": str(err)}, 500
 
-@app.post('/quantidadeEventosPessoa', tags=[participantesEvento_tag], responses={
-                "200": PessoaViewSchema ,
-                "500": ErrorSchema, 
-                "400": ErrorSchema
-          })
+@app.post('/quantidadeEventosPessoa', tags=[participantesEvento_tag], responses={"200": PessoaViewSchema ,"500": ErrorSchema, "400": ErrorSchema})
 def quantidade_eventos_pessoa(form: PessoaSchema):
     """
     Retorna os eventos em que uma pessoa está cadastrada.

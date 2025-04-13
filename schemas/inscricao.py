@@ -3,15 +3,15 @@ from model.inscricao import Inscricao
 from model.evento import Evento
 from Dto.InscreverEvento import InscricaoDTO
 from pydantic import BaseModel, EmailStr
-from datetime import datetime
+from datetime import *
 
 class InscricaoSchema(BaseModel):
     """ Define como um nova inscrição a ser inserido deve ser representado
     """
-    nome: str = "André"
+    nome: str = "João Fernando Moura Xavier"
     evento: int = 2
-    email: str = "andre@outlook"
-    dataNascimento: Optional[datetime] = datetime.now()
+    email: str = "joao_jfmx@outlook.com"
+    dataNascimento: Optional[datetime] = datetime(1995,1,31)
 
 class InscricaoViewSchema(BaseModel):
     """ Define como uma inscrição será retornado

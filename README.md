@@ -1,10 +1,15 @@
-# Minha API
+# Portal de Eventos
 
-Este pequeno projeto faz parte do material diático da Disciplina **Desenvolvimento Full Stack Básico** 
+Bem-vindo ao **Portal de Eventos**, um projeto frontend desenvolvido para facilitar a criação, gerenciamento e participação em eventos. Este portal é intuitivo e responsivo, proporcionando uma experiência fluida aos usuários.
 
-O objetivo aqui é ilutsrar o conteúdo apresentado na primeira aula com um código simples.
+## 📋 Funcionalidades
 
+- **Adicionar Evento**: Crie novos eventos com detalhes como nome, data, local e descrição.
+- **Inscrever-se no Evento**: Permita que os usuários se inscrevam rapidamente nos eventos disponíveis.
+- **Listar Todos os Eventos**: Exiba uma lista de todos os eventos criados.
+- **Design Responsivo**: Desenvolvido com **Bootstrap**, garantindo uma interface amigável e responsiva.
 ---
+
 ## Como executar
 
 Será necessário ter todas as libs python listadas no `requirements.txt` instaladas, é bem simples o processo.
