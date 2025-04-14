@@ -1,6 +1,6 @@
 # Portal de Eventos
 
-Bem-vindo ao **Portal de Eventos**, um projeto frontend desenvolvido para facilitar a criação, gerenciamento e participação em eventos. Este portal é intuitivo e responsivo, proporcionando uma experiência fluida aos usuários.
+Bem-vindo ao **Portal de Eventos**, um projeto backend desenvolvido para facilitar a criação, gerenciamento e participação em eventos. Este portal é intuitivo e responsivo, proporcionando uma experiência fluida aos usuários.
 
 ## 📋 Funcionalidades
 
